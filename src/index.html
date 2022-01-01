@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Book your medical appointment on the blockchain</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-sm-10 col-sm-push-1">
+          <h1 class="text-center">Book your medical appointment on the blockchain</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="appsRow" class="row">
+        <!-- appointments load here -->
+      </div>
+    </div>
+
+    <div id="appTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-4">
+        <div class="panel panel-default panel-app">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Specialization</strong>: <span class="appointment-specialization">General</span><br/>
+            <strong>Date</strong>: <span class="appointment-date">3</span><br/>
+            <strong>Location</strong>: <span class="appointment-location">Melon Beach</span><br/><br/>
+            <button class="btn btn-default btn-book" type="button" data-id="0">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
