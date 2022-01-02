@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.5.0;
+pragma solidity 0.5.16;
 /// @title Register your medical appointment on the blockchain.
 /// @author JanetMo
 /// @notice This is a test contract, it's only deployed on the testnet.
