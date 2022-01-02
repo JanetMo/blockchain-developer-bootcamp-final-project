@@ -1,4 +1,4 @@
-#blockchain-developer-bootcamp-final-project
+blockchain-developer-bootcamp-final-project
 
 This DApp wants to provide secure scheduling of doctor's appointments.
 
