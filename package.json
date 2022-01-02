@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.html"
+    "start": "node ./src/index.html"
   },
   "author": "",
   "license": "ISC",
