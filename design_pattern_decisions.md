@@ -20,4 +20,4 @@ In this pattern, a single account has exclusive access to specific functions. Th
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Booking is Ownable {
+contract Booking is Ownable { 
