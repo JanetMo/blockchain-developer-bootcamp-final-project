@@ -1,3 +1,5 @@
+#blockchain-developer-bootcamp-final-project
+
 This DApp wants to provide secure scheduling of doctor's appointments.
 
 Did you ever make an appointment at the doctor, but when you went there, yours and their schedules didn't match, so you couldn't keep the appointment? This is even more unfruitful if this is following a long waiting period, which is often the case for medical specialists. When booking an appointment by telephone it is sometimes the case, that the appointment details are noted not correctly or get lost. Patients usually don't have the possibility to prove they made a certain appointment, as the doctor's schedule is private and there was no written conversation.
