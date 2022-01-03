@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Dr. Dean",
     "picture": "images/drdean.jpeg",
-    "date": 1,
+    "date": "16.01.2021, 3pm",
     "specialization": "Cardiologist",
     "location": "Sun area"
   },
