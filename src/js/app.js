@@ -5,7 +5,7 @@ App = {
   init: async function () {
     // Load appointments
     $.getJSON(
-      "https://janetmo.github.io/blockchain-developer-bootcamp-final-project2/src/appointments.json",
+      "https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/9c0df9ef02daff2c8a84b62b8310660828af3fd2/src/appointments.json",
       function (data) {
         var appsRow = $("#appsRow");
         var appTemplate = $("#appTemplate");
@@ -56,17 +56,20 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON("appointments.json", function (data) {
-      // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var BookingArtifact = data;
-      App.contracts.Booking = TruffleContract(BookingArtifact);
+    $.getJSON(
+      "https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/9c0df9ef02daff2c8a84b62b8310660828af3fd2/build/contracts/Booking.json",
+      function (data) {
+        // Get the necessary contract artifact file and instantiate it with @truffle/contract
+        var BookingArtifact = data;
+        App.contracts.Booking = TruffleContract(BookingArtifact);
 
-      // Set the provider for our contract
-      App.contracts.Booking.setProvider(App.web3Provider);
+        // Set the provider for our contract
+        App.contracts.Booking.setProvider(App.web3Provider);
 
-      // Use our contract to retrieve and mark the booek appointments
-      return App.markBooked();
-    });
+        // Use our contract to retrieve and mark the booek appointments
+        return App.markBooked();
+      }
+    );
 
     return App.bindEvents();
   },
