@@ -5,7 +5,7 @@ App = {
   init: async function () {
     // Load appointments
     $.getJSON(
-      "https://janetmo.github.io/blockchain-developer-bootcamp-final-project2/appointments.json",
+      "https://janetmo.github.io/blockchain-developer-bootcamp-final-project2/src/appointments.json",
       function (data) {
         var appsRow = $("#appsRow");
         var appTemplate = $("#appTemplate");
@@ -56,7 +56,7 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON("Booking.json", function (data) {
+    $.getJSON("appointments.json", function (data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var BookingArtifact = data;
       App.contracts.Booking = TruffleContract(BookingArtifact);
