@@ -2,7 +2,7 @@
 pragma solidity 0.8.0;
 /// @title Register your medical appointment on the blockchain.
 /// @author JanetMo
-/// @notice This is a test contract, it's only deployed on the testnet.
+/// @notice This is a test contract, it's only deployed on the testnet. And this project is my first experience with coding, so it's very basic
 /// custom:experimental This is an experimental contract.
 
 //import "@openzeppelin/contracts/access/Ownable.sol";
