@@ -33,7 +33,6 @@ To address some weaknesses, the following ideas could be implemented later:
 - Link to the App: ... (unfortunately, the hosting didn't work)
 - My recorded video using the DApp: https://www.loom.com/share/0d0b87432325410985a3514b10b3476c
 - My Ethereum Adress: 0xB34c4D25f25cC296ae4c094BaB9d49e9cce0746A
--
 
 ## How to try the app on your local machine using truffle and Ganache:
 
