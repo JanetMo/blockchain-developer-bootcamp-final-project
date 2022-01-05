@@ -27,51 +27,52 @@ To address some weaknesses, the following ideas could be implemented later:
 - Implement that users are not able to book the next appointment as long as the last one isn't over
 - Using some sort of private data storing and add some details, so the medical team already knows who booked the appointment and what the problem is
 
-- Link to the App: ... (unfortuately, the hosting didn't work)
+Ressources:
+
+- Link to the App: ... (unfortunately, the hosting didn't work)
 - My recorded video using the DApp: https://www.loom.com/share/0d0b87432325410985a3514b10b3476c
 - My Ethereum Adress: 0xB34c4D25f25cC296ae4c094BaB9d49e9cce0746A
 
-##How to try the app on your local machine using truffle and Ganache:
+## How to try the app on your local machine using truffle and Ganache:
 
-- Clone the repository
-- Install truffle with (make sure you have NodeJS v8.9.4 or later)
+1. Clone the repository
 
-  ```
-  npm install -g truffle
-  ```
+2. Install truffle with (make sure you have NodeJS v8.9.4 or later)
 
-  Install Ganache GUI https://trufflesuite.com/ganache/ or CLI via
+```
+npm install -g truffle
+```
 
-  ```
-  npm install -g ganache-cli
-  ```
+3. Install Ganache GUI https://trufflesuite.com/ganache/ or CLI via
 
-  Start Ganache and make sure, you have the right "host" declared in your "truffle.config" file
+```
+npm install -g ganache-cli
+```
 
-- Run
+4. Start Ganache and make sure, you have the right "host" declared in your "truffle.config" file
 
-  ```
-  npm install
-  ```
+5. Run
 
-- Getting the app ready:
-  To compile and migrate the contracts, run
+```
+npm install
+```
 
-  ```
-  truffle compile
-  ```
+## Getting the app ready:
 
-  ```
-  truffle migrate
-  ```
+1. To compile and migrate the contracts, run
 
-Then start die app via
+```
+truffle compile
+truffle migrate
+```
+
+2. Then start die app via
 
 ```
 npm run dev
 ```
 
-- Running unit tests
+## Running unit tests:
 
 ```
 truffle tests
