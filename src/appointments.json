@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Dr. Dean",
     "picture": "images/drdean.jpeg",
-    "date": "16.01.2021, 3pm",
+    "date": "01-16-2021, 10am",
     "specialization": "Cardiologist",
     "location": "Sun area"
   },
@@ -11,7 +11,7 @@
     "id": 1,
     "name": "Dr. Dean",
     "picture": "images/drdean.jpeg",
-    "date": 2,
+    "date": "01-16-2021, 11am",
     "specialization": "Cardiologist",
     "location": "Sun area"
   },
@@ -19,7 +19,7 @@
     "id": 2,
     "name": "Dr. Dean",
     "picture": "images/drdean.jpeg",
-    "date": 3,
+    "date": "01-16-2021, 2pm",
     "specialization": "Cardiologist",
     "location": "Sun area"
   },
@@ -27,7 +27,7 @@
     "id": 3,
     "name": "Dr. Doe",
     "picture": "images/drdoe.jpeg",
-    "date": 4,
+    "date": "01-16-2021, 9am",
     "specialization": "Lung specialist",
     "location": "Melon Beach"
   },
@@ -35,7 +35,7 @@
     "id": 4,
     "name": "Dr. Doe",
     "picture": "images/drdoe.jpeg",
-    "date": 5,
+    "date": "01-16-2021, 11am",
     "specialization": "Lung specialist",
     "location": "Melon Beach"
   },
@@ -43,9 +43,8 @@
     "id": 5,
     "name": "Dr. Doe",
     "picture": "images/drdoe.jpeg",
-    "date": 6,
+    "date": "01-16-2021, 3pm",
     "specialization": "Lung specialist",
     "location": "Melon Beach"
   }
-  
 ]

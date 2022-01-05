@@ -4,26 +4,23 @@ App = {
 
   init: async function () {
     // Load appointments
-    $.getJSON(
-      "https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/9c0df9ef02daff2c8a84b62b8310660828af3fd2/src/appointments.json",
-      function (data) {
-        var appsRow = $("#appsRow");
-        var appTemplate = $("#appTemplate");
+    $.getJSON("appointments.json", function (data) {
+      var appsRow = $("#appsRow");
+      var appTemplate = $("#appTemplate");
 
-        for (i = 0; i < data.length; i++) {
-          appTemplate.find(".panel-title").text(data[i].name);
-          appTemplate.find("img").attr("src", data[i].picture);
-          appTemplate
-            .find(".appointment-specialization")
-            .text(data[i].specialization);
-          appTemplate.find(".appointment-date").text(data[i].date);
-          appTemplate.find(".appointment-location").text(data[i].location);
-          appTemplate.find(".btn-book").attr("data-id", data[i].id);
+      for (i = 0; i < data.length; i++) {
+        appTemplate.find(".panel-title").text(data[i].name);
+        appTemplate.find("img").attr("src", data[i].picture);
+        appTemplate
+          .find(".appointment-specialization")
+          .text(data[i].specialization);
+        appTemplate.find(".appointment-date").text(data[i].date);
+        appTemplate.find(".appointment-location").text(data[i].location);
+        appTemplate.find(".btn-book").attr("data-id", data[i].id);
 
-          appsRow.append(appTemplate.html());
-        }
+        appsRow.append(appTemplate.html());
       }
-    );
+    });
 
     return await App.initWeb3();
   },
@@ -56,20 +53,17 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON(
-      "https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/9c0df9ef02daff2c8a84b62b8310660828af3fd2/build/contracts/Booking.json",
-      function (data) {
-        // Get the necessary contract artifact file and instantiate it with @truffle/contract
-        var BookingArtifact = data;
-        App.contracts.Booking = TruffleContract(BookingArtifact);
+    $.getJSON("Booking.json", function (data) {
+      // Get the necessary contract artifact file and instantiate it with @truffle/contract
+      var BookingArtifact = data;
+      App.contracts.Booking = TruffleContract(BookingArtifact);
 
-        // Set the provider for our contract
-        App.contracts.Booking.setProvider(App.web3Provider);
+      // Set the provider for our contract
+      App.contracts.Booking.setProvider(App.web3Provider);
 
-        // Use our contract to retrieve and mark the booek appointments
-        return App.markBooked();
-      }
-    );
+      // Use our contract to retrieve and mark the booek appointments
+      return App.markBooked();
+    });
 
     return App.bindEvents();
   },

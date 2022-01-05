@@ -5,9 +5,9 @@ pragma solidity 0.8.0;
 /// @notice This is a test contract, it's only deployed on the testnet.
 /// custom:experimental This is an experimental contract.
 
-import "@openzeppelin/contracts/access/Ownable.sol";
+//import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Booking is Ownable
+contract Booking //is Ownable
 { 
 
 address[16] public patients;
