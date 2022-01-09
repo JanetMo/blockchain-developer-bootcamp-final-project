@@ -21,7 +21,7 @@ contract Booking is Ownable {
         return appId;
     }
 
-  /// Retrieving the appointment //modifier after public: OnlyOwner
+  /// Retrieving the appointment 
     function getPatients() public view returns (address[16] memory) {
         return patients;
     }

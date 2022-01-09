@@ -39,32 +39,29 @@ contract("Booking", (accounts) => {
       );
     });
     //Then we compare the contract adress with the one whe should find.
-    
 
     // Test the appointment ID (should be 0-5)
-    it ("behaviour we ware looking for", async () => {
-      //get subject
-      const ... = await ...
-      assert.equal(..., bevorugster Wert, "error mesage")
-    )
-  });
+    //it ("behaviour we ware looking for", async () => {
+    //get subject
+    //const ... = await ...
+    //assert.equal(..., bevorugster Wert, "error mesage")
+    //)
+    //});
 
     // Testing the access control of "ownable.sol"
-    it ("behaviour we ware looking for", async () => {
-      //get subject
-      const ... = await ...
-      assert.equal(..., bevorugster Wert, "error mesage")
-    )
+    //it ("behaviour we ware looking for", async () => {
+    //get subject
+    //const ... = await ...
+    //assert.equal(..., bevorugster Wert, "error mesage")
+    //)
+    //});
+
+    // Book 3 appointments and return the lenth and the array of the adresses
+    //it ("behaviour we ware looking for", async () => {
+    //get subject
+    //const ... = await ...
+    //assert.equal(..., bevorugster Wert, "error mesage")
+    //)
+    //});
   });
-
-    // Book 3 appointments and return the lenth and the array of the adresses 
-    it ("behaviour we ware looking for", async () => {
-      //get subject
-      const ... = await ...
-      assert.equal(..., bevorugster Wert, "error mesage")
-)
 });
-
-
-});
-
