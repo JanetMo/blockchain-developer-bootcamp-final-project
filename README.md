@@ -2,7 +2,7 @@
 
 This DApp wants to provide secure scheduling of doctor's appointments.
 
-![Screenshot of the front-end](https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/fa31276740e2b841ecc71b4f5d5b03bf44538e59/docs/images/screenshot.png)
+![Screenshot of the front-end](https://github.com/JanetMo/blockchain-developer-bootcamp-final-project2/blob/fa31276740e2b841ecc71b4f5d5b03bf44538e59/src/images/screenshot.png)
 
 Did you ever make an appointment at the doctor, but when you went there, yours and their schedules didn't match, so you couldn't keep the appointment?
 
