@@ -44,7 +44,7 @@ contract("Booking", (accounts) => {
     it ("behaviour we ware looking for", async () => {
     get subject
     const ... = await ...
-    assert.equal(..., bevorugster Wert, "error mesage")
+    assert.equal(..., bevorzugter Wert, "error mesage")
     )
     });
 
