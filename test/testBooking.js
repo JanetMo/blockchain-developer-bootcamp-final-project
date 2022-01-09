@@ -12,18 +12,18 @@ contract("Booking", (accounts) => {
   //Testing the book-function: book the appointment with id 3 and assign it to the account 0
   //should return the expected patient
 
-  describe("adopting a pet and retrieving account addresses", async () => {
-    before("adopt a pet using accounts[0]", async () => {
+  describe("booking an appointment and retrieving account addresses", async () => {
+    before("book an appointment using accounts[0]", async () => {
       await booking.book(3, { from: accounts[0] });
       expectedPatient = accounts[0];
     });
 
-    it("can fetch the address of an owner by pet id", async () => {
+    it("can fetch the address of a patient by appointment id", async () => {
       const patient = await booking.patients(3);
       assert.equal(
         patient,
         expectedPatient,
-        "The owner of the adopted pet should be the first account."
+        "The owner of the booked appointment should be the first account."
       );
     });
 
@@ -38,11 +38,33 @@ contract("Booking", (accounts) => {
         "The owner of the adopted pet should be in the collection."
       );
     });
-    //
-    //
-    //it ("behaviour we ware looking for", async () => {
+    //Then we compare the contract adress with the one whe should find.
+    
 
-    //)
+    // Test the appointment ID (should be 0-5)
+    it ("behaviour we ware looking for", async () => {
+      //get subject
+      const ... = await ...
+      assert.equal(..., bevorugster Wert, "error mesage")
+    )
   });
+
+    // Testing the access control of "ownable.sol"
+    it ("behaviour we ware looking for", async () => {
+      //get subject
+      const ... = await ...
+      assert.equal(..., bevorugster Wert, "error mesage")
+    )
+  });
+
+    // Book 3 appointments and return the lenth and the array of the adresses 
+    it ("behaviour we ware looking for", async () => {
+      //get subject
+      const ... = await ...
+      assert.equal(..., bevorugster Wert, "error mesage")
+)
 });
-//Then we compare the contract adress with the one whe should find.
+
+
+});
+

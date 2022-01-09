@@ -3,7 +3,6 @@ pragma solidity 0.8.0;
 /// @title Register your medical appointment on the blockchain.
 /// @author JanetMo
 /// @notice This is a test contract, it's only deployed on the testnet. 
-///custom:This project is my first experience with coding, so it's very basic
 /// custom:experimental This is an experimental contract.
 
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -22,7 +21,7 @@ contract Booking is Ownable {
         return appId;
     }
 
-  /// Retrieving the appointment
+  /// Retrieving the appointment //modifier after public: OnlyOwner
     function getPatients() public view returns (address[16] memory) {
         return patients;
     }

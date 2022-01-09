@@ -28,6 +28,8 @@ To address some weaknesses, the following ideas could be implemented later:
 - Implement that users are not able to book the next appointment as long as the last one isn't over
 - Using some sort of private data storing and add some details, so the medical team already knows who booked the appointment and what the problem is
 
+This is my first contact with coding, so I thought very basic. Therefore I took the famous truffle pet-shop-tutorial (https://trufflesuite.com/tutorial/) and adapted it for this prject.
+
 ## Ressources:
 
 - Link to the App: ... (unfortunately, the hosting didn't work)
