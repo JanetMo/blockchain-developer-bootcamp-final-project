@@ -1,5 +1,2 @@
-Hosted on github pages: 
-
-
-Contract Address (Ropsten testnet):
-0x...
+Adress: 0xDF65D58fF54C37f0470C4083ce840D44a8ad80ef
+Network: Ropsten
