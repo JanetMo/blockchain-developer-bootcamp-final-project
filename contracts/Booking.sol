@@ -7,30 +7,26 @@ pragma solidity 0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
+contract Booking is Ownable {
+    address[6] public patients;
 
-contract Booking is Ownable { 
-
-    address[6] patients;
-    
-    modifier appIdInrange (uint _appId) {
-        require(_appId >= 0 && _appId <= 5, "Maximum number of appointments bookings is reached");
+    modifier appIdInrange(uint256 _appId) {
+        require(
+            _appId >= 0 && _appId <= 5,
+            "Maximum number of appointment bookings is reached"
+        );
         _;
     }
 
-/// Booking a medical appointment
-    function book(uint appId) public appIdInrange(appId) returns (uint) {
-
+    /// Booking a medical appointment
+    function book(uint256 appId) public appIdInrange(appId) returns (uint256) {
         patients[appId] = msg.sender;
 
         return appId;
     }
 
-  /// Retrieving the appointment 
-    function getPatients() public view returns (address[] memory) {
-
+    /// Retrieving the appointment
+    function getPatients() public view returns (address[6] memory) {
         return patients;
     }
-
-
-
 }

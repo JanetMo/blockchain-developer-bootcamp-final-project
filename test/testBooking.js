@@ -60,18 +60,10 @@ contract("Booking", (accounts) => {
       await booking.book(6, { from: accounts[0] }).catch((error) => {
         assert.equal(
           error.message,
-          "Returned error: VM Exception while processing transaction: revert Maximum number of appointments bookings is reached -- Reason given: Maximum number of appointments bookings is reached."
+          "Returned error: VM Exception while processing transaction: revert Maximum number of appointment bookings is reached -- Reason given: Maximum number of appointment bookings is reached."
         );
       });
     });
-
-    // Testing the access control of "ownable.sol"
-    //it ("behaviour we ware looking for", async () => {
-    //get subject
-    //const ... = await ...
-    //assert.equal(..., bevorugster Wert, "error mesage")
-    //)
-    //});
 
     // Book 3 appointments and return the lenth and the array of the adresses
     it("should return the number of bookings", async () => {
