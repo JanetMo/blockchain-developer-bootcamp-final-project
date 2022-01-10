@@ -10,11 +10,15 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract Booking is Ownable { 
 
-    address[16] public patients;
+    address[6] patients;
+    
+    modifier appIdInrange (uint _appId) {
+        require(_appId >= 0 && _appId <= 5, "Maximum number of appointments bookings is reached");
+        _;
+    }
 
 /// Booking a medical appointment
-    function book(uint appId) public returns (uint) {
-        require(appId >= 0 && appId <= 5);
+    function book(uint appId) public appIdInrange(appId) returns (uint) {
 
         patients[appId] = msg.sender;
 
@@ -22,7 +26,8 @@ contract Booking is Ownable {
     }
 
   /// Retrieving the appointment 
-    function getPatients() public view returns (address[16] memory) {
+    function getPatients() public view returns (address[] memory) {
+
         return patients;
     }
 
