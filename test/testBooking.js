@@ -40,8 +40,8 @@ contract("Booking", (accounts) => {
     });
     //Then we compare the contract adress with the one whe should find.
 
-    // Test the appointment ID (should be 0-5)
-    it ("behaviour we ware looking for", async () => {
+    Test the appointment ID (should be 0-5)
+    it ("accept appointment ID 0-5", async () => {
     get subject
     const ... = await ...
     assert.equal(..., bevorzugter Wert, "error mesage")
