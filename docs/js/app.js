@@ -53,7 +53,7 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON("Booking.json", function (data) {
+    $.getJSON("./contracts/Booking.json", function (data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
       var BookingArtifact = data;
       App.contracts.Booking = TruffleContract(BookingArtifact);
