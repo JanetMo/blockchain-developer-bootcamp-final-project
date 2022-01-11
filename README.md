@@ -33,7 +33,7 @@ This is my first contact with coding, so I thought very basic. Therefore, I took
 
 ## Resources:
 
-- Link to the App: https://janetmo.github.io/blockchain-developer-bootcamp-final-project/
+- Link to the App: https://janetmo.github.io/blockchain-developer-bootcamp-final-project/ (please switch to the ropsten testnet to use it, you will need some ropsten test ether, you can get some here: https://faucet.ropsten.be/ )
 - My recorded video using the DApp: https://www.loom.com/share/44392a86149049e198bfce171e85d9ff
 - My Ethereum address: 0xB34c4D25f25cC296ae4c094BaB9d49e9cce0746A
 
