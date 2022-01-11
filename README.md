@@ -33,7 +33,7 @@ This is my first contact with coding, so I thought very basic. Therefore, I took
 
 ## Resources:
 
-- Link to the App: https://janetmo.github.io/blockchain-developer-bootcamp-final-project/ (unfortunately, the buttons don't work)
+- Link to the App: https://janetmo.github.io/blockchain-developer-bootcamp-final-project/
 - My recorded video using the DApp: https://www.loom.com/share/44392a86149049e198bfce171e85d9ff
 - My Ethereum address: 0xB34c4D25f25cC296ae4c094BaB9d49e9cce0746A
 
