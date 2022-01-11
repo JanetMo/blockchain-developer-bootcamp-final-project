@@ -3,12 +3,13 @@ const Booking = artifacts.require("Booking");
 contract("Booking", (accounts) => {
   let booking;
   let expectedPatient;
-  //importing the Booking-contact and providing the available accounts
+  //Importing the Booking-contact and providing the available accounts
 
   before(async () => {
     booking = await Booking.deployed();
   });
 
+  //Make sure, the contract gets deployed correctly
   describe("deployment", () => {
     it("deploys successfully", async () => {
       const address = booking.address;
@@ -20,8 +21,7 @@ contract("Booking", (accounts) => {
   });
 
   //Testing the book-function: book the appointment with id 0 and assign it to the account 0
-  //should return the expected patient
-
+  //Should return the expected patient
   describe("booking an appointment and retrieving account addresses", async () => {
     before("book an appointment using accounts[0]", async () => {
       await booking.book(0, { from: accounts[0] });
@@ -37,9 +37,8 @@ contract("Booking", (accounts) => {
       );
     });
 
-    //Call the patients smart contract method to see the address of the patient who booked the appointment with Id 3.
-    // Then we test the retrieval of all patients who booked an appointment.
-
+    //Call the patient's smart contract method to see the address of the patient who booked the appointment with Id 0
+    // Then we test the retrieval of all patients who booked an appointment and compare the contract adress with the one whe should find
     it("can fetch the collection of all patient's owners' addresses", async () => {
       const patients = await booking.getPatients();
       assert.equal(
@@ -48,9 +47,8 @@ contract("Booking", (accounts) => {
         "The owner of the booked appointment should be in the collection."
       );
     });
-    //Then we compare the contract adress with the one whe should find.
 
-    //Test the appointment ID (should be 0-5)
+    //Test the appointment ID (should be 0-5), otherwise we get an error the maximum amount of appointments is reached
     it("should not accept more appointments thans 6", async () => {
       await booking.book(1, { from: accounts[0] });
       await booking.book(2, { from: accounts[0] });
@@ -65,7 +63,7 @@ contract("Booking", (accounts) => {
       });
     });
 
-    // Book 3 appointments and return the lenth and the array of the adresses
+    // Get back the number of bookings, should not be more than 6
     it("should return the number of bookings", async () => {
       const bookings = await booking.getPatients();
       assert.equal(bookings.length, 6);
