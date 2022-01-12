@@ -11,7 +11,7 @@ module.exports = {
   contracts_build_directory: "./src/contracts",
   networks: {
     development: {
-      host: "172.18.192.1",
+      host: "172.0.0.1",
       port: 7545,
       network_id: "*", // Match any network id
     },
