@@ -76,7 +76,7 @@ truffle migrate
 npm run dev
 ```
 
-    If this doesn't work, try to open the "index.html" file with live server.
+If this doesn't work, try to open the "index.html" file with live server.
 
 ## Running unit tests:
 
