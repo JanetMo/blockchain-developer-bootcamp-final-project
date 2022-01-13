@@ -8,7 +8,7 @@ dotenv.config();
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
   // for more about customizing your Truffle configuration!
-  contracts_build_directory: "./src/contracts",
+  contracts_build_directory: "./docs/contracts",
   networks: {
     development: {
       host: "172.0.0.1",
