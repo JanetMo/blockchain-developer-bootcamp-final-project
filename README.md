@@ -37,7 +37,7 @@ This is my first contact with coding, so I thought very basic. Therefore, I took
 - My recorded video using the DApp: https://www.loom.com/share/44392a86149049e198bfce171e85d9ff
 - My Ethereum address: 0xB34c4D25f25cC296ae4c094BaB9d49e9cce0746A
 
-## How to try the app on your local machine using truffle and Ganache:
+## How to try the app on your local machine using truffle and ganache:
 
 1. Clone the repository
 
@@ -47,13 +47,13 @@ This is my first contact with coding, so I thought very basic. Therefore, I took
 npm install -g truffle
 ```
 
-3. Install Ganache GUI https://trufflesuite.com/ganache/ or CLI via
+3. Install ganache GUI https://trufflesuite.com/ganache/ or CLI via
 
 ```
 npm install -g ganache-cli
 ```
 
-4. Start Ganache and make sure, you have the right "host" declared in your "truffle.config" file
+4. Start ganache and make sure, you have the right "host" declared in your "truffle.config" file
 
 5. Run
 
@@ -70,7 +70,7 @@ truffle compile
 truffle migrate
 ```
 
-2. Then start die app via
+2. Then start the DApp via
 
 ```
 npm run dev

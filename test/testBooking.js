@@ -49,7 +49,7 @@ contract("Booking", (accounts) => {
     });
 
     //Test the appointment ID (should be 0-5), otherwise we get an error the maximum amount of appointments is reached
-    it("should not accept more appointments thans 6", async () => {
+    it("should not accept more appointments than 6", async () => {
       await booking.book(1, { from: accounts[0] });
       await booking.book(2, { from: accounts[0] });
       await booking.book(3, { from: accounts[0] });
